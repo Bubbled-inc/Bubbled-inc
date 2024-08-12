@@ -1,0 +1,83 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 800px; /* Prevent content from shrinking too much */ /* Background color for the content area */
+    background-color: rgba(117, 178, 250, 0.8);
+}
+
+/* Edge strips styling */
+.left-strip, .right-strip {
+    position: fixed;
+    top: 0;
+    width: 100px; /* Width of the edge strip */
+    height: 100%;
+    background-image: url('1.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire strip */
+    background-position: center; /* Center the image within the strip */
+    z-index: -1; /* Ensure strips are behind the content */
+}
+
+.left-strip {
+    left: 0; /* Aligns the left strip to the left side */
+}
+
+.right-strip {
+    right: 0; /* Aligns the right strip to the right side */
+}
+
+/* Content area styling */
+.content {
+    max-width: 60%; /* Width of the content area */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 20px;
+    position: relative;
+    z-index: 1; /* Ensure content is above the strips */  /* Optional: Slightly transparent background for readability */
+    /* Optional: Add a subtle shadow around the content */
+}
+
+/* Text styling */
+h1, p {
+    margin: 0 0 20px;
+    font-family: Arial, sans-serif;
+    color: #333; /* Text color */
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Navigation bar styling */
+nav {
+    text-align: center; /* Center the navigation links */
+}
+
+nav ul {
+    list-style: none; /* Remove list markers */
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Display the list items inline */
+}
+
+nav li {
+    display: inline-block; /* Display the list items inline */
+    margin: 0 10px; /* Add some spacing between the links */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set the link color */
+    padding: 10px 15px; /* Add some padding around the links */
+    border-radius: 5px; /* Add rounded corners to the links */
+    background-color: rgba(117, 178, 250, 0.8); /* Set the link background color */
+}
+
+nav a:hover {
+    background-color: #333; /* Change the background color on hover */
+    color: #fff; /* Change the text color on hover */
+}
