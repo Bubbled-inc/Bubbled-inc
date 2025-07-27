@@ -12,7 +12,7 @@ body {
     top: 0;
     width: 100px; /* Width of the edge strip */
     height: 100%;
-    background-image: url('https://cdn.glitch.global/a18d2492-9c19-4f32-8cc5-f291c2e5dde7/1.jpg?v=1723664484545'); /* Path to your image */
+    background-image: url('image.png'); /* Path to your image */
     background-size: cover; /* Cover the entire strip */
     background-position: center; /* Center the image within the strip */
     z-index: -1; /* Ensure strips are behind the content */
